@@ -1,0 +1,1 @@
+In Unit 7, I learned how web design can support global goals and help communities. I explored the Design Thinking Process and created ideas for a Climate Action website. This unit helped me understand that websites can spread awareness and solve real-world problems.

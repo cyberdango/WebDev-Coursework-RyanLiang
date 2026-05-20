@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Photography Portfolio</title>
+
+    <style>
+
+        body {
+            background-color: #ffe6f0;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: white;
+            border: 5px solid darkblue;
+            border-radius: 15px;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 5px solid darkblue;
+            border-radius: 15px;
+        }
+
+        .button-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: darkblue;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: purple;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 id="hello">
+            Ryan's Photography Website
+        </h1>
+
+        <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+            alt="Nature Photography"
+        >
+
+        <p>
+            Welcome to my photography website.
+            Click the button below to change the title.
+        </p>
+
+        <div class="button-box">
+
+            <button onclick="changeText()">
+                Click Here
+            </button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function changeText() {
+            document.getElementById("hello").innerHTML = ":)";
+        }
+
+    </script>
+
+</body>
+
+</html>

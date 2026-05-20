@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Photography Responsive and Adaptive Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background-color: #ffe6f0;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border: 5px solid darkblue;
+            border-radius: 15px;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        h2 {
+            color: darkred;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 5px solid darkblue;
+            border-radius: 15px;
+        }
+
+        .section {
+            background-color: #fff7fb;
+            padding: 20px;
+            margin-top: 30px;
+            border: 3px solid pink;
+            border-radius: 12px;
+        }
+
+        .responsive-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #e6f2ff;
+            padding: 20px;
+            border: 3px solid skyblue;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .adaptive-layout {
+            width: 960px;
+            margin: auto;
+            background-color: #fff0cc;
+            padding: 20px;
+            border: 3px solid orange;
+            border-radius: 10px;
+        }
+
+        .adaptive-box {
+            display: inline-block;
+            width: 280px;
+            margin: 10px;
+            padding: 15px;
+            background-color: white;
+            border: 2px solid darkorange;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Responsive design */
+        @media (max-width: 900px) {
+            .responsive-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            body {
+                background-color: #e6f2ff;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .responsive-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+
+            body {
+                background-color: #f2ffe6;
+            }
+        }
+
+        /* Adaptive design */
+        @media (max-width: 1024px) {
+            .adaptive-layout {
+                width: 720px;
+                background-color: lightyellow;
+            }
+
+            .adaptive-box {
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .adaptive-layout {
+                width: 420px;
+                background-color: lightpink;
+            }
+
+            .adaptive-box {
+                display: block;
+                width: 350px;
+                margin: 15px auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .adaptive-layout {
+                width: 300px;
+                background-color: lightgreen;
+                padding: 10px;
+            }
+
+            .adaptive-box {
+                width: 240px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Ryan's Photography Website</h1>
+
+        <img 
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+            alt="A scenic road surrounded by trees and mountains"
+        >
+
+        <div class="section">
+            <h2>Responsive Design Version</h2>
+            <p>
+                This part uses a fluid grid, flexible image, and media queries.
+                The cards change from three columns, to two columns, to one column.
+            </p>
+
+            <div class="responsive-grid">
+                <div class="card">City Lights</div>
+                <div class="card">Nature</div>
+                <div class="card">Travel</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Adaptive Design Version</h2>
+            <p>
+                This part uses fixed layout sizes for different screen widths.
+                It changes at specific breakpoints.
+            </p>
+
+            <div class="adaptive-layout">
+                <div class="adaptive-box">Desktop Layout</div>
+                <div class="adaptive-box">Tablet Layout</div>
+                <div class="adaptive-box">Mobile Layout</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>About This Website</h2>
+            <p>
+                This website shows both responsive and adaptive design.
+                Responsive design changes smoothly.
+                Adaptive design changes at set screen sizes.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

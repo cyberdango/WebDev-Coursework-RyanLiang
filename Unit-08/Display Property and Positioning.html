@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Photography Portfolio</title>
+
+    <style>
+        body {
+            background-color: #ffe6f0;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            width: 80%;
+            margin: 40px auto;
+            padding: 25px;
+            border: 5px solid darkblue;
+            border-radius: 15px;
+        }
+
+        .sticky-title {
+            position: sticky;
+            top: 0;
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+            display: block;
+        }
+
+        h2 {
+            color: darkred;
+        }
+
+        p {
+            color: black;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        img {
+            width: 500px;
+            height: auto;
+            border: 5px solid darkblue;
+            border-radius: 15px;
+            display: block;
+            margin: 20px auto;
+            padding: 5px;
+        }
+
+        .section {
+            background-color: #fff7fb;
+            margin-top: 30px;
+            padding: 20px;
+            border: 3px solid pink;
+            border-radius: 12px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .nav-links a {
+            display: inline-block;
+            background-color: darkblue;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            color: darkgreen;
+        }
+
+        .topic-card {
+            background-color: #e6f2ff;
+            padding: 15px;
+            border: 2px solid skyblue;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .steps-list li {
+            display: block;
+            background-color: #fff0cc;
+            margin: 10px 0;
+            padding: 10px;
+            border: 2px solid orange;
+            border-radius: 8px;
+        }
+
+        .highlight {
+            display: inline;
+            color: darkorange;
+            font-weight: bold;
+        }
+
+        .hidden-note {
+            display: none;
+        }
+
+        .relative-box {
+            position: relative;
+            left: 20px;
+            background-color: #e6f2ff;
+            padding: 15px;
+            border: 3px solid skyblue;
+            margin-top: 15px;
+        }
+
+        .parent-box {
+            position: relative;
+            height: 150px;
+            background-color: #f2f2f2;
+            border: 3px dashed gray;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .absolute-box {
+            position: absolute;
+            right: 20px;
+            top: 40px;
+            background-color: #fff0cc;
+            padding: 15px;
+            border: 3px solid orange;
+        }
+
+        .fixed-box {
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+            background-color: darkblue;
+            color: white;
+            padding: 12px;
+            border: 3px solid white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="fixed-box">
+        Fixed Box
+    </div>
+
+    <div class="container">
+
+        <div class="sticky-title">
+            Ryan's Photography Website
+        </div>
+
+        <h1 title="Photography Homepage">Photography Portfolio</h1>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">About</a>
+        </div>
+
+        <img 
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+            alt="A scenic road surrounded by trees and mountains"
+        >
+
+        <p title="Introduction Paragraph">
+            Welcome to my photography website. 
+            I created this page to share my favorite photos and travel pictures.
+        </p>
+
+        <p class="hidden-note">
+            This paragraph is hidden with display none.
+        </p>
+
+        <div class="section">
+            <h2>Why I Chose Photography</h2>
+            <p>
+                I enjoy taking pictures of cities, nature, and daily life.
+                Photography helps me record <span class="highlight">special moments</span>.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>My Favorite Photography Topics</h2>
+
+            <div class="topic-grid">
+                <div class="topic-card">City Lights</div>
+                <div class="topic-card">Nature</div>
+                <div class="topic-card">Travel</div>
+                <div class="topic-card">Night Photography</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Steps When Taking Photos</h2>
+
+            <ol class="steps-list">
+                <li>Find a good location</li>
+                <li>Set up the camera</li>
+                <li>Take the picture</li>
+                <li>Edit the photo</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Relative Position Example</h2>
+            <div class="relative-box">
+                This box is moved slightly to the right using relative positioning.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Absolute Position Example</h2>
+            <div class="parent-box">
+                This is the parent box.
+                <div class="absolute-box">
+                    Absolute Box
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Photography Inspiration</h2>
+            <p>Visit this photography website for inspiration:</p>
+            <a href="https://www.nationalgeographic.com/photography" target="_blank">
+                National Geographic Photography
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>About This Website</h2>
+            <p>
+                This website uses the CSS box model, positioning, and display properties.
+                Flex makes the navigation links line up in one row.
+                Grid organizes the photography topics into boxes.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
